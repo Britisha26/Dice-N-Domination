@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice & Domination</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Manufacturing+Consent&family=New+Rocker&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main-div">
+        <div class="content-div">
+            <h1>Dice & Domination</h1>
+            <h2><span>0</span> - <span>0</span></h2>
+            <p>Use the buttons below to roll the dice</p>
+            <div class="select-div">
+            <label for="number">Die goes upto</label>
+            <select id="number" name="number" onmousedown="if(this.options.length>4){this.size=4;}"  onchange='this.size=0;' onblur="this.size=0;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6" selected="selected">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select>
+            </div>
+        </div>
+        <div class="buttons-div">
+            <button type="submit" id="playerOne">Player One</button>
+            <button id="playerTwo">Player Two</button>
+            <button id="reset">End Game</button>
+        </div>
+        <div class="roll-div">
+            <p class="rolling">Player <span> One</span> rolled <span>0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
